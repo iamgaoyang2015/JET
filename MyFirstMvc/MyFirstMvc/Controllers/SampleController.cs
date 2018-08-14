@@ -30,8 +30,8 @@ namespace MyFirstMvc.Controllers
 
             var newList = toList.Where(to => !resultList.Any(result => to.LocaId == result.LocaId));
             int[] A = new int[9];
-            for (int i = 0; i < 9; i++)
-            {
+            for (int i = 0; i < 9; i++)                    
+            {  
                 A[i] = i + 1;
             }
             this.getSubSet(A, 8, 0);
